@@ -35,7 +35,9 @@
     <a href="#">All categories</a>
     <span> > "deadpool games" (627 results)</span>
     <span>Sort by: <a href="#">Relevance</a></span>
-    <!--Product Template-->
+    <div class="product-display">
+    <!--Product Template-------------------------->
+    </div>
   </section>
 
   <aside>
@@ -150,13 +152,15 @@
     </div>
   </footer>
 
-  <script type="text/x-handlebars-template">
-    <a href="#"><div class="item-display">
-      <img src="http://unsplash.it/220/220/">
-      <span>{{title}}</span>
-      <span>{{seller}}</span>
-      <span>${{price}}</span>
-    </div></a>
+  <script id="product-display-template" type="text/x-handlebars-template">
+    <div>
+      <a href="#">
+        <img src="{{Images.0.url_170x135}}">
+        <span>{{title}}</span>
+        <span>{{Shop.shop_name}}</span>
+        <span>${{price}}</span>
+      </a>
+    </div>
   </script>
 
     <script src="js/bundle.js"></script>
