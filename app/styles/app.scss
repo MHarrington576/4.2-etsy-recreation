@@ -1,0 +1,23 @@
+$icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+@import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
+@import "https://fonts.googleapis.com/css?family=Raleway";
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
+  background-color: lightblue;
+}
+
+img{
+  max-width: 100%;
+}
+
+.etsy-logo{
+  display: inline-block;
+}
+
+.search-bar{
+  display: inline-block;
+}
