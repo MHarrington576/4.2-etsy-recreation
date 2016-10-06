@@ -5,18 +5,153 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 
 *, *::before, *::after {
   box-sizing: border-box;
-  text-decoration: none;
   font-family: 'Raleway', 'Helvetica', sans-serif;
+  list-style: none;
 }
 
-img{
+img {
   max-width: 100%;
 }
 
-.etsy-logo{
+body {
+  background-color: #F5F5F1;
+}
+
+.well {
+  background-color: #FFFFFF;
+}
+
+.etsy-logo {
+  display: inline-block;
+  max-width: 100px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+}
+
+.top-right-nav {
+  display: inline-block;
+  float: right;
+}
+
+.site-nav-link {
+  margin-left: 15px;
+  color: #77777F;
+}
+
+.top-right-nav-link {
+  color: #0192C7;
+  margin-left: 15px;
+}
+
+#relevance-dropdown {
+  color: #0192C7;
+  margin-right: 15px;
+}
+
+aside {
+  position: absolute;
+  display: inline-block;
+  float: left;
+  margin-bottom: 25px;
+  background-color: #FFFFFF;
+  padding-top: -5px;
+  border-radius: 5px;
+}
+
+.product-showcase-header {
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+#all-categories-link {
+  color: #0192C7;
+}
+
+#sort-by-menu {
+  position: relative;
+  float: right;
+}
+
+.text-input {
+  width: 420px;
+  height: 35px;
+  background-color: #FAFAF9;
+  border-radius: 3px;
+}
+
+.text-input-2 {
+  width: 200px;
+  height: 35px;
+  border-radius: 3px;
+}
+
+.text-input-button {
+  position: relative;
+  height: 35px;
+  width: 80px;
+  right: 4px;
+  bottom: 1px;
+  background-color: #34A8C4;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+}
+
+.search-bar {
   display: inline-block;
 }
 
-.search-bar{
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.bottom-left {
   display: inline-block;
+}
+
+.bottom-right {
+  display: inline-block;
+  float: right;
+  padding-right: 15px;
+}
+
+#us-flag {
+  width: 32px;
+  height: 20px;
+}
+
+.handlebars-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.handlebars-image img {
+  width: 200%;
+  height: auto;
+}
+
+.handlebars-product-info {
+  background-color: #FFFFFF;
+  border-radius: 3px;
+}
+
+.handlebars-title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.handlebars-shop {
+  color: #9A9AB3;
+}
+
+.handlebars-price {
+  float: right;
+  color: #78C042;
+  margin-bottom: 25px;
 }

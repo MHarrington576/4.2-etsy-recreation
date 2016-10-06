@@ -5,42 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Etsy Recreation</title>
     <link rel="stylesheet" href="css/app.css">
+    <script src="https://use.fontawesome.com/d2d801d2e0.js"></script>
   </head>
-  <header>
+  <header class="well">
     <img class="etsy-logo" src="images/etsy-logo.png">
     <form class="search-bar">
-      <input type="text" placeholder="Search for items or shops">
-      <input type="button" value="Search">
+      <input class="text-input" type="text" placeholder="Search for items or shops">
+      <input class="text-input-button" type="submit" value="Search">
     </form>
     <nav class="top-right-nav">
-      <a href="#">Sell on Etsy</a>
-      <a href="#">Register</a>
-      <a href="#">Sign In</a>
-      <a href="#">[ ] Cart</a>
-    </nav>
-    <nav class="site-nav">
-      <a href="#">Clothing &amp; Accessories</a>
-      <a href="#">Jewelry</a>
-      <a href="#">Craft Supplies &amp; Tools</a>
-      <a href="#">Weddings</a>
-      <a href="#">Entertainment</a>
-      <a href="#">Home &amp; Living</a>
-      <a href="#">Kids &amp; Baby</a>
-      <a href="#">Vintage</a>
+      <a class="top-right-nav-link" href="#">Sell on Etsy</a>
+      <a class="top-right-nav-link" href="#">Register</a>
+      <a id="top-right-sign-in" class="top-right-nav-link" href="#">Sign In</a>
+      <a id="top-right-nav-cart" href="#">
+        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        <span> Cart</span></a>
     </nav>
     <hr>
+    <nav class="site-nav">
+      <a class="site-nav-link" href="#">Clothing &amp; Accessories</a>
+      <a class="site-nav-link" href="#">Jewelry</a>
+      <a class="site-nav-link" href="#">Craft Supplies &amp; Tools</a>
+      <a class="site-nav-link" href="#">Weddings</a>
+      <a class="site-nav-link" href="#">Entertainment</a>
+      <a class="site-nav-link" href="#">Home &amp; Living</a>
+      <a class="site-nav-link" href="#">Kids &amp; Baby</a>
+      <a class="site-nav-link" href="#">Vintage</a>
+    </nav>
   </header>
 
   <section>
-    <a href="#">All categories</a>
-    <span> > "deadpool games" (627 results)</span>
-    <span>Sort by: <a href="#">Relevance</a></span>
+    <div class="product-showcase-header">
+      <a id="all-categories-link" href="#">All categories</a>
+      <span> > "deadpool games" (25 of 629 results)</span>
+      <span id="sort-by-menu">Sort by: <a id="relevance-dropdown" href="#">Relevance</a></span>
+    </div>
     <div class="product-display">
     <!--Product Template-------------------------->
     </div>
   </section>
 
-  <aside>
+  <aside class="col-md-3">
     <h3>Refine your search</h3>
     <div class="sidebar">
       <span>Shop location</span>
@@ -90,76 +95,93 @@
     <hr>
     <span class="page-nav">[ < | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | ... | 13 | > ]
     <span>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</span>
-    <input type="email" placeholder="Enter your email">
+    <form>
+      <input class="text-input-2" type="email" placeholder="Enter your email">
+      <input class="text-input-button" type="submit" value="Subscribe">
+    </form>
     <hr>
-    <div class="col-1">
-      <span>Turn your passion into a<br>business</span>
-      <button>Open a shop</button>
-      <a href="#">Sell on Etsy</a>
-      <a href="#">Open a shop</a>
-      <a href="#">Seller Handbook</a>
-      <a href="#">Etsy credit card reader</a>
-      <a href="#">Manufacturing</a>
+    <div class="row">
+      <div id="lower-nav" class="col-md-12">
+        <div id="lower-nav-columns" class="row">
+          <ul class="col-md-2">
+            <li><span>Turn your passion into a<br>business</span>
+            <li><button>Open a shop</button>
+            <li><a href="#">Sell on Etsy</a></li>
+            <li><a href="#">Open a shop</a></li>
+            <li><a href="#">Seller Handbook</a></li>
+            <li><a href="#">Etsy credit card reader</a></li>
+            <li><a href="#">Manufacturing</a></li>
+          </ul>
+          <ul class="col-md-2">
+            <li><span>Join the community</span></li>
+            <li><a href="#">Teams</a></li>
+            <li><a href="#">Forums</a></li>
+            <li><a href="#">Upcoming events</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Etsy Local</a></li>
+          </ul>
+          <ul class="col-md-2">
+            <li><span>Discover and shop</span></li>
+            <li><a href="#">Gift cards</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Treasury</a></li>
+            <li><a href="#">Mobile apps</a></li>
+            <li><a href="#">Gift registries</a></li>
+            <li><a href="#">Wholesale</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Editors' Picks</a></li>
+          </ul>
+          <ul class="col-md-2">
+            <li><span>Get to know us</span></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Policies</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Investors</a></li>
+          </ul>
+          <ul class="col-md-2">
+            <li><span>Follow Etsy</span></li>
+            <li><a href="#">[ ] Facebook</a></li>
+            <li><a href="#">[ ] Twitter</a></li>
+            <li><a href="#">[ ] Pinterest</a></li>
+            <li><a href="#">[ ] Instagram</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-    <div class="col-2">
-      <span>Join the community</span>
-      <a href="#">Teams</a>
-      <a href="#">Forums</a>
-      <a href="#">Upcoming events</a>
-      <a href="#">Affiliates</a>
-      <a href="#">Etsy Local</a>
-    </div>
-    <div class="col-3">
-      <span>Discover and shop</span>
-      <a href="#">Gift cards</a>
-      <a href="#">Blog</a>
-      <a href="#">Treasury</a>
-      <a href="#">Mobile apps</a>
-      <a href="#">Gift registries</a>
-      <a href="#">Wholesale</a>
-      <a href="#">Search</a>
-      <a href="#">Editors' Picks</a>
-    </div>
-    <div class="col-4">
-      <span>Get to know us</span>
-      <a href="#">About</a>
-      <a href="#">Policies</a>
-      <a href="#">Careers</a>
-      <a href="#">Press</a>
-      <a href="#">Developers</a>
-      <a href="#">Investors</a>
-    </div>
-    <div class="col-5">
-      <span>Follow Etsy</span>
-      <a href="#">[ ] Facebook</a>
-      <a href="#">[ ] Twitter</a>
-      <a href="#">[ ] Pinterest</a>
-      <a href="#">[ ] Instagram</a>
-    </div>
-    <hr>
-    <div class="bottom-left">
-      <img src="http://unsplash.it/20/20/">
-      <a href="#">United States</a> |
-      <a href="#">English (US)</a> |
-      <a href="#">$ (USD)</a>
-    </div>
-    <div class="bottom-right">
-      <span>(c) 2016 Etsy, Inc.</span>
-      <a href="#">Legal</a>
-      <a href="#">Privacy</a>
-      <a href="#">Interest-based ads</a>
-      <button>Help</button>
+        <hr>
+        <div class="bottom-left">
+          <img id="us-flag" src="images/us-flag.jpg">
+          <a href="#">United States</a> |
+          <a href="#">English (US)</a> |
+          <a href="#">$ (USD)</a>
+        </div>
+      <div class="row">
+        <div class="bottom-right">
+          <span>(c) 2016 Etsy, Inc.</span>
+          <a href="#">Legal</a>
+          <a href="#">Privacy</a>
+          <a href="#">Interest-based ads</a>
+          <button>Help</button>
+        </div>
+      </div>
     </div>
   </footer>
 
   <script id="product-display-template" type="text/x-handlebars-template">
-    <div>
+    <div class="col-md-3">
+      <div class="handlebars-image">
+        <a href="#">
+        <img src="{{Images.0.url_170x135}}"></a>
+      </div>
+      <div class="handlebars-product-info">
       <a href="#">
-        <img src="{{Images.0.url_170x135}}">
-        <span>{{title}}</span>
-        <span>{{Shop.shop_name}}</span>
-        <span>${{price}}</span>
-      </a>
+        <span class="handlebars-title">{{title}}</span></a>
+      <a href="#">
+        <span class="handlebars-shop">{{Shop.shop_name}}</span></a>
+      <span class="handlebars-price">${{price}}</span>
+      </div>
     </div>
   </script>
 
