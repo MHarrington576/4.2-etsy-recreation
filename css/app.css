@@ -5782,7 +5782,21 @@ body {
 
 .top-right-nav {
   display: inline-block;
-  float: right; }
+  float: right;
+  margin-top: 10px; }
+
+#top-right-sign-in {
+  border: 1px solid #0192C7;
+  border-radius: 3px;
+  padding: 8px; }
+
+#top-right-nav-cart {
+  margin-left: 25px;
+  margin-right: 15px; }
+
+#nav-cart-border {
+  border-left: 1px solid gray;
+  padding-left: 5px; }
 
 .site-nav-link {
   margin-left: 15px;
@@ -5796,11 +5810,10 @@ body {
   color: #0192C7;
   margin-right: 15px; }
 
-aside {
-  position: absolute;
+.sidebar {
   display: inline-block;
   float: left;
-  margin-bottom: 25px;
+  margin-bottom: 1200px;
   background-color: #FFFFFF;
   padding-top: -5px;
   border-radius: 5px; }
