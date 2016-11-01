@@ -40,31 +40,42 @@
   </header>
 
   <aside class="col-md-3">
-    <h3>Refine your search</h3>
+    <h4><b>Refine your search</b></h4>
     <div class="sidebar">
-      <span>Shop location</span>
+      <span class="sidebar-heading">Shop location</span>
       <form class="refine-by-location">
-        <input type="radio" name="location-option"><span>Anywhere</span>
-        <input type="radio" name="location-option"><span>United States</span>
+        <ul>
+          <li><input class="location-radio" type="radio" name="location-option"><span> Anywhere</span></li>
+          <li><input class="location-radio" type="radio" name="location-option"><span> United States</span></li>
+        </ul>
       </form>
-      <a href="#">Choose a custom location</a>
+      <a id="custom-location" href="#">Choose a custom location</a>
       <hr>
-      <span>Item Type</span>
+      <span class="sidebar-heading">Item Type</span>
       <form class="refine-by-type">
-        <input type="radio" name="type-option"><span>All items</span>
-        <input type="radio" name="type-option"><span>Handmade</span>
-        <input type="radio" name="type-option"><span>Vintage</span>
+        <ul>
+          <li><input type="radio" name="type-option"><span> All items</span></li>
+          <li><input type="radio" name="type-option"><span> Handmade</span></li>
+          <li><input type="radio" name="type-option"><span> Vintage</span></li>
+        </ul>
       </form>
       <hr>
-      <span>Price ($)</span>
+      <span class="sidebar-heading">Price ($)</span>
       <form class="filter-by-price">
+        <ul>
+          <li><input type="radio" name="price-option"><span> Any price</span></li>
+          <li><input type="radio" name="price-option"><span> Under $25</span></li>
+          <li><input type="radio" name="price-option"><span> $25 to $50</span></li>
+          <li><input type="radio" name="price-option"><span> $50 to $100</span></li>
+          <li><input type="radio" name="price-option"><span> Over $100</span></li>
+        </ul>
         <input type="number" placeholder="Low">
         <span> to </span>
         <input type="number" placeholder="High">
         <input type="button" value="[->]">
       </form>
       <hr>
-      <span>Filter by color</span>
+      <span class="sidebar-heading">Filter by color</span>
       <a href="#">[Rd]</a>
       <a href="#">[Or]</a>
       <a href="#">[Yl]</a>
@@ -74,7 +85,7 @@
       <a href="#">[Bk]</a>
       <a href="#">[Wh]</a>
       <hr>
-      <span>Ordering options</span>
+      <span class="sidebar-heading">Ordering options</span>
       <form class="filter-by-ordering">
         <input type="checkbox"><span>Accepts Etsy gift cards</span>
         <input type="checkbox"><span>Customizable</span>

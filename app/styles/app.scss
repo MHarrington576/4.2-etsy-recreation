@@ -1,11 +1,10 @@
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@import "https://fonts.googleapis.com/css?family=Raleway";
+@import "https://fonts.googleapis.com/css?family=Raleway|Oxygen";
 
 
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family: 'Raleway', 'Helvetica', sans-serif;
   list-style: none;
 }
 
@@ -15,6 +14,7 @@ img {
 
 body {
   background-color: #F5F5F1;
+  font-family: 'Raleway', 'Helvetica', sans-serif;
 }
 
 .well {
@@ -66,13 +66,29 @@ body {
   margin-right: 15px;
 }
 
+h4 {
+  font-family: 'Oxygen', sans-serif;
+}
+
 .sidebar {
+  font-family: 'Oxygen', sans-serif;
+  font-size: 14.5px;
   display: inline-block;
   float: left;
   margin-bottom: 1200px;
   background-color: #FFFFFF;
   padding-top: -5px;
   border-radius: 5px;
+  color: #0192C7;
+}
+
+.sidebar-heading {
+  font-weight: 900;
+  color: #000000;
+}
+
+#custom-location {
+  color: #0192C7;
 }
 
 .product-showcase-header {
