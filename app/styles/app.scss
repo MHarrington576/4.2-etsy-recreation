@@ -17,6 +17,11 @@ body {
   font-family: 'Raleway', 'Helvetica', sans-serif;
 }
 
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
 .well {
   background-color: #FFFFFF;
 }
@@ -68,24 +73,34 @@ body {
 
 h4 {
   font-family: 'Oxygen', sans-serif;
+  font-size: 23px;
 }
 
 .sidebar {
   font-family: 'Oxygen', sans-serif;
-  font-size: 14.5px;
+  font-size: 16px;
   display: inline-block;
   float: left;
   margin-bottom: 1200px;
   background-color: #FFFFFF;
-  padding-top: -5px;
   border-radius: 5px;
   color: #0192C7;
+  padding: 10px;
 }
 
 .sidebar-heading {
   font-weight: 900;
   color: #000000;
+  display: block;
+  font-size: 18px;
 }
+
+// .radio-button:checked {
+//   span {
+//     color: #000000;
+//   }
+//   color: #00000;
+// }
 
 #custom-location {
   color: #0192C7;
@@ -103,6 +118,70 @@ h4 {
 #sort-by-menu {
   position: relative;
   float: right;
+}
+
+.num-input {
+  width: 65px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 1px solid gray;
+}
+
+#to-span {
+  color: black;
+}
+
+#sq-red {
+  color: red;
+}
+
+#sq-orange {
+  color: orange;
+}
+
+#sq-yellow {
+  color: yellow;
+}
+
+#sq-green {
+  color: green;
+}
+
+#sq-blue {
+  color: blue;
+}
+
+#sq-purple {
+  color: purple;
+}
+
+#sq-white {
+  color: #D3D3D3;
+}
+
+.btn-info {
+  width: 100%;
+  color: #000000;
+  background-color: white;
+  border-color: lightgray;
+}
+
+.btn-info:hover {
+  color: #000000;
+  background-color: white;
+  border-color: gray;
+}
+
+.arrow-button {
+  color: gray;
+  background-color: white;
+  border: 1px solid gray;
+}
+
+.arrow-button:hover {
+  color: black;
+  background-color: lightgray;
+  border: 1px solid darkgray;
 }
 
 .text-input {

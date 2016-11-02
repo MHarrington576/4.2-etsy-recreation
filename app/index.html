@@ -45,8 +45,8 @@
       <span class="sidebar-heading">Shop location</span>
       <form class="refine-by-location">
         <ul>
-          <li><input class="location-radio" type="radio" name="location-option"><span> Anywhere</span></li>
-          <li><input class="location-radio" type="radio" name="location-option"><span> United States</span></li>
+          <li><input class="radio-button location-radio" type="radio" name="location-option"><span> Anywhere</span></li>
+          <li><input class="radio-button location-radio" type="radio" name="location-option"><span> United States</span></li>
         </ul>
       </form>
       <a id="custom-location" href="#">Choose a custom location</a>
@@ -54,45 +54,46 @@
       <span class="sidebar-heading">Item Type</span>
       <form class="refine-by-type">
         <ul>
-          <li><input type="radio" name="type-option"><span> All items</span></li>
-          <li><input type="radio" name="type-option"><span> Handmade</span></li>
-          <li><input type="radio" name="type-option"><span> Vintage</span></li>
+          <li><input class="radio-button" type="radio" name="type-option"><span> All items</span></li>
+          <li><input class="radio-button" type="radio" name="type-option"><span> Handmade</span></li>
+          <li><input class="radio-button" type="radio" name="type-option"><span> Vintage</span></li>
         </ul>
       </form>
       <hr>
       <span class="sidebar-heading">Price ($)</span>
       <form class="filter-by-price">
         <ul>
-          <li><input type="radio" name="price-option"><span> Any price</span></li>
-          <li><input type="radio" name="price-option"><span> Under $25</span></li>
-          <li><input type="radio" name="price-option"><span> $25 to $50</span></li>
-          <li><input type="radio" name="price-option"><span> $50 to $100</span></li>
-          <li><input type="radio" name="price-option"><span> Over $100</span></li>
+          <li><input class="radio-button" type="radio" label="Any Price" name="price-option"><span> Any price</span></li>
+          <li><input class="radio-button" type="radio" name="price-option"><span> Under $25</span></li>
+          <li><input class="radio-button" type="radio" name="price-option"><span> $25 to $50</span></li>
+          <li><input class="radio-button" type="radio" name="price-option"><span> $50 to $100</span></li>
+          <li><input class="radio-button" type="radio" name="price-option"><span> Over $100</span></li>
         </ul>
-        <input type="number" placeholder="Low">
-        <span> to </span>
-        <input type="number" placeholder="High">
-        <input type="button" value="[->]">
+        <input class="num-input" type="number" placeholder="Low">
+        <span id="to-span"> to </span>
+        <input class="num-input" type="number" placeholder="High">
+        <button class="btn arrow-button" type="button"><i class="fa fa-caret-right" aria-hidden="true"></i></button>
       </form>
       <hr>
-      <span class="sidebar-heading">Filter by color</span>
-      <a href="#">[Rd]</a>
-      <a href="#">[Or]</a>
-      <a href="#">[Yl]</a>
-      <a href="#">[Gr]</a>
-      <a href="#">[Bl]</a>
-      <a href="#">[Pr]</a>
-      <a href="#">[Bk]</a>
-      <a href="#">[Wh]</a>
+      <span class="sidebar-heading" id="filter-by-color-heading">Filter by color</span>
+      <a href="#"><i class="fa fa-square fa-2x" id="sq-red" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-square fa-2x" id="sq-orange" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-square fa-2x" id="sq-yellow" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-square fa-2x" id="sq-green" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-square fa-2x" id="sq-blue" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-square fa-2x" id="sq-purple" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-square fa-2x" id="sq-black" aria-hidden="true"></i></a>
+      <a href="#"><i class="fa fa-square fa-2x" id="sq-white" aria-hidden="true"></i></a>
       <hr>
       <span class="sidebar-heading">Ordering options</span>
       <form class="filter-by-ordering">
-        <input type="checkbox"><span>Accepts Etsy gift cards</span>
-        <input type="checkbox"><span>Customizable</span>
+        <input type="checkbox"><span> Accepts Etsy gift cards</span>
+        <br>
+        <input type="checkbox"><span> Customizable</span>
       </form>
       <hr>
-      <span>Ship to</span>
-      <span>United States</span>
+      <span class="sidebar-heading">Ship to</span>
+      <button class="btn btn-info" type="button">United States</button>
     </div>
   </aside>
 
