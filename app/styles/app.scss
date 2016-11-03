@@ -1,7 +1,6 @@
 $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
-@import "https://fonts.googleapis.com/css?family=Raleway|Oxygen";
-
+@import 'https://fonts.googleapis.com/css?family=Raleway|Oxygen';
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -44,21 +43,28 @@ ul {
   border: 1px solid #0192C7;
   border-radius: 3px;
   padding: 8px;
+  margin-right: 10px;
 }
 
 #top-right-nav-cart {
-  margin-left: 25px;
-  margin-right: 15px;
+  padding-left: 4px;
 }
 
-#nav-cart-border {
-  border-left: 1px solid gray;
-  padding-left: 5px;
+.cart-icon-and-text {
+  position: relative;
+  bottom: 13px;
+  margin-left: 15px;
+  margin-right: 35px;
 }
 
 .site-nav-link {
   margin-left: 15px;
   color: #77777F;
+}
+
+.site-nav-link:hover {
+  color: #000000;
+  text-decoration: none;
 }
 
 .top-right-nav-link {
@@ -93,14 +99,8 @@ h4 {
   color: #000000;
   display: block;
   font-size: 18px;
+  margin-bottom: 5px;
 }
-
-// .radio-button:checked {
-//   span {
-//     color: #000000;
-//   }
-//   color: #00000;
-// }
 
 #custom-location {
   color: #0192C7;
@@ -155,6 +155,10 @@ h4 {
   color: purple;
 }
 
+#sq-black:hover {
+  color: black;
+}
+
 #sq-white {
   color: #D3D3D3;
 }
@@ -176,6 +180,8 @@ h4 {
   color: gray;
   background-color: white;
   border: 1px solid gray;
+  position: relative;
+  bottom: 1.5px;
 }
 
 .arrow-button:hover {
@@ -188,12 +194,6 @@ h4 {
   width: 420px;
   height: 35px;
   background-color: #FAFAF9;
-  border-radius: 3px;
-}
-
-.text-input-2 {
-  width: 200px;
-  height: 35px;
   border-radius: 3px;
 }
 
@@ -213,24 +213,161 @@ h4 {
   display: inline-block;
 }
 
+.search-input {
+  border: 1px solid lightgray;
+}
+
 a {
   text-decoration: none;
   color: #000000;
 }
 
+footer {
+  z-index: 0;
+  height: 15%;
+  margin-bottom: 25px;
+}
+
+.footer-heading, .footer-heading-secondary {
+  font-size: 16px;
+  font-weight: bolder;
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.footer-heading-secondary {
+
+}
+
+.footer-li {
+  margin-top: 5px;
+  font-size: 95%;
+}
+
+#lower-nav-columns {
+  margin-bottom: 55px;
+}
+
+.page-nav {
+  display: block;
+  position: relative;
+  top: 133.5px;
+  font-family: 'Oxygen', sans-serif;
+  font-weight: bolder;
+}
+
+.page-nav-btn {
+  background-color: #FFFFFF;
+  height: 40px;
+  width: 35px;
+  border: 1px solid lightgray;
+  padding: 0;
+  margin-right: -5px;
+}
+
+.page-nav-btn-current, .fake-page-nav-btn {
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  background-color: #F1F1EB;
+  height: 40px;
+  width: 35px;
+  border: 1px solid lightgray;
+  padding: 10px;
+  margin-right: -5px;
+  text-align: center;
+}
+
+.page-nav-btn-current {
+  border: 1px solid #000000;
+}
+
+.fake-page-nav-btn {
+  color: lightgray;
+}
+
+.page-nav-arrow {
+  width: 40px;
+}
+
+.email-signup {
+  display: block;
+  position: absolute;
+  left: 35%;
+  top: 2110px;
+  text-align: center;
+}
+
+.email-signup-text {
+  display: block;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.email-input {
+  width: 350px;
+  height: 35px;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.btn-primary {
+  background-color: #34A8C4;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 3px;
+}
+
 .bottom-left {
   display: inline-block;
+  float: left;
+  border: 1px solid lightgray;
+  background-color: #FFFFFF;
+  padding: 5px;
+  padding-right: 10px;
+  margin-left: 25px;
+  font-size: 95%;
 }
 
 .bottom-right {
   display: inline-block;
   float: right;
   padding-right: 15px;
+  margin-right: 25px;
+  font-size: 95%;
+  font-family: 'Oxygen', sans-serif;
+}
+
+.fa-facebook-official, .fa-twitter, .fa-pinterest-p, .fa-instagram {
+  padding-right: 5px;
 }
 
 #us-flag {
   width: 32px;
   height: 20px;
+  border-radius: 100%;
+}
+
+#copyright-notice {
+  color: gray;
+  margin-right: 35px;
+}
+
+.bottom-right-link {
+  padding-right: 35px;
+}
+
+.bottom-right-link-md {
+  padding-right: 7px;
+}
+
+.bottom-right-btn {
+  border: 1px solid lightgray;
+  border-radius: 3px;
+  background-color: #FFFFFF;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
 .handlebars-image {
@@ -241,7 +378,7 @@ a {
 }
 
 .handlebars-image img {
-  width: 200%;
+  width: auto;
   height: auto;
 }
 

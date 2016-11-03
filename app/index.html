@@ -12,19 +12,17 @@
   <header class="well">
     <img class="etsy-logo" src="images/etsy-logo.png">
     <form class="search-bar">
-      <input class="text-input" type="text" placeholder="Search for items or shops">
+      <input class="text-input search-input" type="text" placeholder="Search for items or shops">
       <input class="text-input-button" type="submit" value="Search">
     </form>
     <nav class="top-right-nav">
       <a class="top-right-nav-link" href="#">Sell on Etsy</a>
       <a class="top-right-nav-link" href="#">Register</a>
       <a id="top-right-sign-in" class="top-right-nav-link" href="#">Sign In</a>
-      <div id="nav-cart-border">
-        <a id="top-right-nav-cart" href="#">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          <span> Cart</span>
-        </a>
-      </div>
+      <span class="fa-stack cart-icon-and-text"><a id="top-right-nav-cart" href="#">
+        <i class="fa fa-shopping-cart fa-lg cart-icon" aria-hidden="true"></i>
+        <span id="cart-text">Cart</span>
+      </a></span>
     </nav>
     <hr>
     <nav class="site-nav">
@@ -45,16 +43,16 @@
       <span class="sidebar-heading">Shop location</span>
       <form class="refine-by-location">
         <ul>
-          <li><input class="radio-button location-radio" type="radio" name="location-option"><span> Anywhere</span></li>
+          <li><input class="radio-button location-radio" type="radio" name="location-option" checked><span> Anywhere</span></li>
           <li><input class="radio-button location-radio" type="radio" name="location-option"><span> United States</span></li>
         </ul>
       </form>
       <a id="custom-location" href="#">Choose a custom location</a>
       <hr>
-      <span class="sidebar-heading">Item Type</span>
+      <span class="sidebar-heading">Item type</span>
       <form class="refine-by-type">
         <ul>
-          <li><input class="radio-button" type="radio" name="type-option"><span> All items</span></li>
+          <li><input class="radio-button" type="radio" name="type-option" checked><span> All items</span></li>
           <li><input class="radio-button" type="radio" name="type-option"><span> Handmade</span></li>
           <li><input class="radio-button" type="radio" name="type-option"><span> Vintage</span></li>
         </ul>
@@ -63,7 +61,7 @@
       <span class="sidebar-heading">Price ($)</span>
       <form class="filter-by-price">
         <ul>
-          <li><input class="radio-button" type="radio" label="Any Price" name="price-option"><span> Any price</span></li>
+          <li><input class="radio-button" type="radio" label="Any Price" name="price-option" checked><span> Any price</span></li>
           <li><input class="radio-button" type="radio" name="price-option"><span> Under $25</span></li>
           <li><input class="radio-button" type="radio" name="price-option"><span> $25 to $50</span></li>
           <li><input class="radio-button" type="radio" name="price-option"><span> $50 to $100</span></li>
@@ -100,74 +98,87 @@
   <section>
     <div class="product-showcase-header">
       <a id="all-categories-link" href="#">All categories</a>
-      <span> > "deadpool games" (25 of 651 results)</span>
+      <span> > "deadpool games" (25 of 655 results)</span>
       <span id="sort-by-menu">Sort by: <a id="relevance-dropdown" href="#">Relevance</a></span>
     </div>
     <div class="product-display">
-    <!--Product Template-------------------------->
+    <!-- Product Template -------------------------->
     </div>
   </section>
 
   <footer>
-    <hr>
-    <span class="page-nav">[ < | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | ... | 13 | > ]
-    <span>Get top trends and fresh editors' picks in your inbox with Etsy Finds.</span>
-    <form>
-      <input class="text-input-2" type="email" placeholder="Enter your email">
-      <input class="text-input-button" type="submit" value="Subscribe">
+    <form class="page-nav">
+      <span class="fake-page-nav-btn page-nav-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></span>
+      <span class="page-nav-btn-current"> 1 </span>
+      <button class="page-nav-btn"> 2 </button>
+      <button class="page-nav-btn"> 3 </button>
+      <button class="page-nav-btn"> 4 </button>
+      <button class="page-nav-btn"> 5 </button>
+      <button class="page-nav-btn"> 6 </button>
+      <button class="page-nav-btn"> 7 </button>
+      <button class="page-nav-btn"> 8 </button>
+      <span class="fake-page-nav-btn"> ... </span>
+      <button class="page-nav-btn"> 14 </button>
+      <button class="page-nav-btn page-nav-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>
     </form>
-    <hr>
+    <div class="email-signup">
+      <span class="email-signup-text">Get top trends and fresh editors' picks in your inbox with Etsy Finds.</span>
+      <form>
+        <input class="email-input" type="email" placeholder="Enter your email">
+        <input class="text-input-button" type="submit" value="Subscribe">
+      </form>
+    </div>
     <div class="row">
       <div id="lower-nav" class="col-md-12">
         <div id="lower-nav-columns" class="row">
-          <ul class="col-md-2">
-            <li><span>Turn your passion into a<br>business</span>
-            <li><button>Open a shop</button>
-            <li><a href="#">Sell on Etsy</a></li>
-            <li><a href="#">Open a shop</a></li>
-            <li><a href="#">Seller Handbook</a></li>
-            <li><a href="#">Etsy credit card reader</a></li>
-            <li><a href="#">Manufacturing</a></li>
+          <hr>
+          <ul class="col-md-2 col-md-offset-1">
+            <li><span class="footer-heading">Turn your passion into a<br>business</span>
+            <li class="footer-li"><button class="btn btn-primary">Open a shop</button>
+            <li><span class="footer-heading-secondary">Sell on Etsy</span></li>
+            <li class="footer-li"><a href="#">Open a shop</a></li>
+            <li class="footer-li"><a href="#">Seller Handbook</a></li>
+            <li class="footer-li"><a href="#">Etsy credit card reader</a></li>
+            <li class="footer-li"><a href="#">Manufacturing</a></li>
           </ul>
           <ul class="col-md-2">
-            <li><span>Join the community</span></li>
-            <li><a href="#">Teams</a></li>
-            <li><a href="#">Forums</a></li>
-            <li><a href="#">Upcoming events</a></li>
-            <li><a href="#">Affiliates</a></li>
-            <li><a href="#">Etsy Local</a></li>
+            <li><span class="footer-heading">Join the community</span></li>
+            <li class="footer-li"><a href="#">Teams</a></li>
+            <li class="footer-li"><a href="#">Forums</a></li>
+            <li class="footer-li"><a href="#">Upcoming events</a></li>
+            <li class="footer-li"><a href="#">Affiliates</a></li>
+            <li class="footer-li"><a href="#">Etsy Local</a></li>
           </ul>
           <ul class="col-md-2">
-            <li><span>Discover and shop</span></li>
-            <li><a href="#">Gift cards</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Treasury</a></li>
-            <li><a href="#">Mobile apps</a></li>
-            <li><a href="#">Gift registries</a></li>
-            <li><a href="#">Wholesale</a></li>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Editors' Picks</a></li>
+            <li><span class="footer-heading">Discover and shop</span></li>
+            <li class="footer-li"><a href="#">Gift cards</a></li>
+            <li class="footer-li"><a href="#">Blog</a></li>
+            <li class="footer-li"><a href="#">Treasury</a></li>
+            <li class="footer-li"><a href="#">Mobile apps</a></li>
+            <li class="footer-li"><a href="#">Gift registries</a></li>
+            <li class="footer-li"><a href="#">Wholesale</a></li>
+            <li class="footer-li"><a href="#">Search</a></li>
+            <li class="footer-li"><a href="#">Editors' Picks</a></li>
           </ul>
           <ul class="col-md-2">
-            <li><span>Get to know us</span></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Policies</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Developers</a></li>
-            <li><a href="#">Investors</a></li>
+            <li><span class="footer-heading">Get to know us</span></li>
+            <li class="footer-li"><a href="#">About</a></li>
+            <li class="footer-li"><a href="#">Policies</a></li>
+            <li class="footer-li"><a href="#">Careers</a></li>
+            <li class="footer-li"><a href="#">Press</a></li>
+            <li class="footer-li"><a href="#">Developers</a></li>
+            <li class="footer-li"><a href="#">Investors</a></li>
           </ul>
           <ul class="col-md-2">
-            <li><span>Follow Etsy</span></li>
-            <li><a href="#">[ ] Facebook</a></li>
-            <li><a href="#">[ ] Twitter</a></li>
-            <li><a href="#">[ ] Pinterest</a></li>
-            <li><a href="#">[ ] Instagram</a></li>
+            <li><span class="footer-heading">Follow Etsy</span></li>
+            <li class="footer-li"><a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>Facebook</a></li>
+            <li class="footer-li"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i>Twitter</a></li>
+            <li class="footer-li"><a href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i>Pinterest</a></li>
+            <li class="footer-li"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i>Instagram</a></li>
           </ul>
         </div>
       </div>
     </div>
-        <hr>
         <div class="bottom-left">
           <img id="us-flag" src="images/us-flag.jpg">
           <a href="#">United States</a> |
@@ -176,11 +187,11 @@
         </div>
       <div class="row">
         <div class="bottom-right">
-          <span>(c) 2016 Etsy, Inc.</span>
-          <a href="#">Legal</a>
-          <a href="#">Privacy</a>
-          <a href="#">Interest-based ads</a>
-          <button>Help</button>
+          <span id="copyright-notice">© 2016 Etsy, Inc.</span>
+          <a class="bottom-right-link-md" href="#">Legal</a>
+          <a class="bottom-right-link-md" href="#">Privacy</a>
+          <a class="bottom-right-link" href="#">Interest-based ads</a>
+          <button class="bottom-right-btn">Help</button>
         </div>
       </div>
     </div>
