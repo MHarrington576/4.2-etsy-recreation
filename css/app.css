@@ -5961,6 +5961,7 @@ footer {
 .page-nav {
   display: block;
   position: relative;
+  z-index: -1;
   top: 133.5px;
   font-family: 'Oxygen', sans-serif;
   font-weight: bolder; }
@@ -6094,4 +6095,5 @@ footer {
   float: right;
   color: #78C042;
   margin-bottom: 25px; }
+
 /*# sourceMappingURL=app.css.map */
