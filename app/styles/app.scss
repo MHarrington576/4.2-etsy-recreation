@@ -252,6 +252,7 @@ footer {
 .page-nav {
   display: block;
   position: relative;
+  z-index: -1;
   top: 133.5px;
   font-family: 'Oxygen', sans-serif;
   font-weight: bolder;
